@@ -1,0 +1,32 @@
+[user]
+	name = walker smith
+	email = walker.smith@versionone.com
+[push]
+	default = simple
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  pr = pull --rebase
+[gui]
+	gcwarning = false
+[diff]
+	tool = bc4
+	guitool = bc4
+[difftool "bc4"]
+	path = c:\\Program Files (x86)\\Beyond Compare 4\\
+	cmd = 'c:\\Program Files (x86)\\Beyond Compare 4\\BComp.exe' \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[merge]
+	tool = bc4
+[mergetool]
+	keepBackup = false
+[mergetool "bc4"]
+	path = c:\\Program Files (x86)\\Beyond Compare 4\\
+	cmd = 'c:\\Program Files (x86)\\Beyond Compare 4\\BComp.exe' \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+	trustExitCode = true
