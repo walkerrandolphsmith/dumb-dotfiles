@@ -2,7 +2,8 @@
 #   2.  SET PATHS
 #   -----------------------------
 
-export PATH="$PATH:/usr/local/bin/"
+export PATH="$PATH:c/Program Files/nodejs"
+
 
 #   -----------------------------
 #   2.  MAKE TERMINAL ALIASES
