@@ -12,6 +12,8 @@
   type = cat-file -t
   dump = cat-file -p
   pr = pull --rebase
+
+gui = !sh -c '/usr/local/git/libexec/git-core/git-gui'	
 [gui]
 	gcwarning = false
 [diff]
