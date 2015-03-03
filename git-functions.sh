@@ -1,51 +1,39 @@
-
-
+alias gco='git co'
+alias ga='git a'
+alias gaa='git aa'
+alias gci='git ci'
 alias gs='git status '
-alias ga='git add '
-alias gb='git branch '
-alias gc='git commit'
-alias gd='git diff'
-alias go='git checkout '
-alias gp='git pull '
-alias gpr='git pull --rebase '
+alias gb='git br'
+alias gp='git p'
+alias gpr='git pr'
+alias gcp='git cp'
+alias gpick='git pick'
+alias gm='git m'
+alias gours='git ours'
+alias gtheirs='git theirs'
+alias gmt='git mt'
+alias gtype='git type'
+alias gdump='git dump'
+alias glog='git lg'
+alias gcleanup='git cleanup'
+alias gundo='git undo'
+alias ghelp='git alias'
+alias gh='sed -e "s/{\(.*\)}/\1/" ~/git-functions.sh'
+alias ghall='declare -f'
 
-cor(){
+gnb(){
+	#git checkout -b <local-branch-name> <origin>/<remote-branch-name>
 	git checkout -b $1 $2/$3
 }
 
-ri(){
+gri(){
+	#git rebase interactive <commit-hash>
 	git rebase -i $1
 }
 
 gcm(){
+	#git commit message <commit-message>
 	git commit -m "$1"
 }
-
-g-h(){
-	echo ""
-	git --help
-	echo "========================"
-	echo "===== GIT COMMANDS ====="
-	echo "========================"
-	echo "gs   => git status"
-	echo "ga   => git add"
-	echo "gb   => git branch"
-	echo "gc   => git commit"
-	echo "gd   => git diff"
-	echo "go   => git checkout"
-	echo "gp   => git pull"
-	echo "gpr  => 'git pull --rebase"
-	
-	echo ""
-	echo "cor  => git checkout -b <local-branch-name> <origin> <remote-branch-name>"
-	echo "ri   => rebase interactive <commit-hash>"
-	echo "gcm  => git commit -m <"commit message">"
-	echo ""
-	echo "issue declare -f to list all functions;"
-	echo "========================"
-	echo "===== GIT COMMANDS ====="
-	echo "========================"
-}
-
 
 
